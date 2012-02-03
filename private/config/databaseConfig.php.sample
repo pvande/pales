@@ -1,0 +1,24 @@
+<?php
+  global $config;
+
+  /*
+    These configuration files presume a two-database system; one for interfacing with ('dev', or
+    in a deployment, 'live'), and one for testing against.
+  */
+  
+  $config->database = array(
+    'main' => array(
+      'host'     => 'localhost',
+      'database' => 'project_dev',
+      'user'     => 'root',
+      'password' => '',
+    ),  
+    'test' => array(
+      'host'     => 'localhost',
+      'database' => 'project_test',
+      'user'     => 'root',
+      'password' => '',
+    )
+  );
+
+?>

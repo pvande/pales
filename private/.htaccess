@@ -1,0 +1,10 @@
+
+<Files "*">
+  order allow,deny
+  deny from all
+</Files>
+
+<Files 'run_tests.php'>
+  order allow,deny
+  allow from 127.0.0.1
+</Files>
